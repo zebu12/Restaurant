@@ -1,4 +1,4 @@
-body{
+body{   /* Body Styles */
     font-size: 16px;
     color: #fff;
     background-color: #61122f;
@@ -6,24 +6,24 @@ body{
     
 }
 
-#header-nav {
+#header-nav { /* Header Navigation Bar */
     background-color: #f6b319;
     border-radius: 0;
     border: 0;
 }
 
 
-#logo-img {
+#logo-img { /* Logo Image */
     background: url('/images/restaurant-logo_large.png') no-repeat;
     width: 150px;
     height: 150px;
     margin: 10px 15px 10px 0;
 }
-.navbar-brand {
+.navbar-brand { /* Navbar Brand Container */
     padding-top: 25px;
 }
 
-.navbar-brand h1 {
+.navbar-brand h1 { /* Restaurant Name */
     font-family: 'Lora', serif;
     color: #557c3e;
     font-size: 1.5em;
@@ -35,17 +35,113 @@ body{
     line-height: .75;
 }
 
-.navbar-brand a:hover, .navbar-brand a:focus {
+.navbar-brand a:hover, .navbar-brand a:focus { /* Restaurant Name link hover */
     text-decoration: none;
 }
 
-.navbar-brand p {
+.navbar-brand p { /* Kosher certification */
     color: #000;
     text-transform: uppercase;
     font-size: .7em;
     margin-top: 15px;
 }
 
-.navbar-brand p span {
+.navbar-brand p span { /* Kosher Logo */
     vertical-align: middle;
 }
+
+#nav-list { /* Navigation Menu */
+    margin-top: 10px;
+}
+#nav-list a {   /* Navigation Menu Links */
+    color: #951c49;
+    text-align: center;
+}
+#nav-list a:hover { /* Navigation Menu Links Hover */
+    background: #e7e7e7;
+}
+#nav-list a span { /* Navigation Menu Icons */
+    font-size: 1.8em;
+}
+
+#phone{ /* Phone Number in Header */
+    margin-top: 5px;
+}
+
+#phone a { /* Phone Number Link */
+    text-align: right;
+    padding-bottom: 0;
+}
+#phone div { /* Phone Icon */
+    color: #557c3e;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar { /* Navbar Toggle Button */
+    border: 1px solid #61122f;
+}
+
+.navbar-header button.navbar-toggle { /* Navbar Toggle Button Background */
+    clear: both;
+    margin-top: -30px;
+}
+/* END HEADER STYLES */
+
+/* Media Queries */
+
+/* Large Devices */
+@media (min-width: 1200px) {
+    .jumbotron {
+        background: url('/images/jumbotron_1200.jpg') no-repeat;
+        height: 675px;
+        box-shadow: 0 0 50px #3f0c1f;
+        border: 2px solid #3f0c1f;
+    }
+    
+}
+
+/* Medium Devices */
+@media (min-width: 992px) and (max-width: 1199px) { /* medium image for logo */
+    #logo-img {
+        background: url('/images/restaurant-logo_medium.png') no-repeat;
+        width: 100px;
+        height: 100px;
+        margin: 5px 5px 5px 0;
+    }
+    
+}
+
+/* Small Devices */
+@media (min-width: 768px) and (max-width: 991px) {
+   
+}
+
+/* Extra Small Devices */
+@media (max-width: 767px) { 
+    
+    .navbar-brand {
+        padding-top: 10px;
+        height: 80px;
+    }
+    .navbar-brand h1 { /* Restaurant Name */
+        font-size: 5vw; /* 1vw = 1% of viewport width */
+        padding-top: 10px;   
+    }
+    .navbar-brand p { /* Kosher certification */
+        font-size: .6em;
+        margin-top: 12px;
+    }
+    .navbar-brand p img { /* Kosher Logo */
+        height: 20px;    
+    }
+    #collapsable-nav a{ /* Collapsable Nav Links */
+        font-size: 1.2em;
+    }
+    #collapsable-nav a span { /* Collapsable Nav Icons */
+        font-size: 1em;
+        margin-right: 5px;
+    }
+    
+}
+
