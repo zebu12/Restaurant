@@ -192,11 +192,57 @@ body{   /* Body Styles */
 #menu-categories-title + div{
     margin-bottom: 50px;
 }
+/* End menu page styles */
 
+/* Menu category page styles */
+.menu-item-tile{
+    margin-bottom: 25px;
+}
+.menu-item-tile hr{
+    width: 80%;
+}
+.menu-item-tile .menu-item-price{
+    font-size: 1.1em;
+    text-align: right;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+.menu-item-tile .menu-item-price span{
+    font-size: .6em;
+}
 
+.menu-item-photo{
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: -15px;
+    max-width: 250px;
+}
 
+.menu-item-photo div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    background-color: #557c3e;
+    text-align: center;
+}
+.menu-item-description{
+    padding-right: 30px;
+}
+h3.menu-item-title{
+    margin: 0 0 10px;
+}
 
+.menu-item-details{
+    font-size: .9em;
+    font-style: italic;
+}
 
+/* End Menu category page styles */
 
 
 
@@ -288,14 +334,12 @@ body{   /* Body Styles */
     .container .jumbotron {
         background: url('/images/jumbotron_992.jpg') no-repeat;
         height: 558px;
-       
-    }   
-    
+    }
 }
 
 /* Small Devices */
 @media (min-width: 768px) and (max-width: 991px) {
-   
+
     /* Jumbotron image for small devices */
     .container .jumbotron {
         background: url('/images/jumbotron_768.jpg') no-repeat;
@@ -377,6 +421,16 @@ body{   /* Body Styles */
         width: 180px;
         margin: 0 auto 15px;
     }
+
+    .menu-item-photo{
+        margin-right: auto;
+    }.menu-item-tile .menu-item-price{
+        text-align: center;
+    }
+    .menu-item-description{
+        text-align: center;
+    }
+    
 }
 
 /* Super Extra Small Devices */
