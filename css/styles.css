@@ -162,6 +162,95 @@ body{   /* Body Styles */
     opacity: 0.8;   
     text-transform: uppercase;
 }
+/* End Home Page Jumbotron Styles */
+
+/* menu page styles */
+
+.category-tile{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border: 2px solid #3f0c1f;
+    margin: 0 auto 15px;
+    overflow: hidden;
+}
+.category-tile span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    width: 100%;
+    background-color: #000;
+    font-size: 1.2em;
+    text-align: center;
+    opacity: 0.8;   
+    text-transform: uppercase; 
+}
+.category-tile:hover{
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-categories-title + div{
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -206,19 +295,14 @@ body{   /* Body Styles */
 
 /* Small Devices */
 @media (min-width: 768px) and (max-width: 991px) {
-    /* Adjust logo size 
-    #logo-img {
-        background: url('/images/restaurant-logo_small.png') no-repeat;
-        width: 80px;
-        height: 80px;
-        margin: 5px 5px 5px 0;
-    } */
+   
     /* Jumbotron image for small devices */
     .container .jumbotron {
         background: url('/images/jumbotron_768.jpg') no-repeat;
         height: 432px;
         
     }
+    
 }
 
 /* Extra Small Devices */
@@ -279,26 +363,27 @@ body{   /* Body Styles */
     }
 
 
-
-    
     /* Home Page Jumbotron */
     .container .jumbotron {
         margin-top: 30px;
         padding: 0;
-        
+
     }
     #menu-tile, #specials-tile{
         width: 360px;
         margin: 0 auto 15px;
     }
-    
+    .category-tile{
+        width: 180px;
+        margin: 0 auto 15px;
+    }
 }
 
 /* Super Extra Small Devices */
 @media (max-width: 375px) {
 
     .navbar-brand h1 { /* Restaurant Name */
-        font-size: 6vw; /* 1vw = 1% of viewport width */  
+        font-size: 6vw; /* 1vw = 1% of viewport width */
         padding-top: 5px;
     }
 
@@ -307,5 +392,16 @@ body{   /* Body Styles */
         width: 280px;
         margin: 0 auto 15px;
     }
+
+    .col-xxs-12 {
+        width: 100%;
+        float: left;
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+
 }
 
